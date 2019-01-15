@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+  <!-- 地址为http://localhost:8080/  显示的默认网页-->
+  <welcome-file-list>
+    <welcome-file>/index.jsp</welcome-file>
+  </welcome-file-list>
+
+
+
+</web-app>
+
+
+
+
+
+
+        <!--https://www.cnblogs.com/tongxuping/p/7134203.html-->
+<!--<url-pattern> / </url-pattern>：会匹配到 /springmvc 这样的路径型url，而不会匹配到像 .jsp 这样的后缀型的url。-->
+
+
+<!--<url-pattern> /* </url-pattern>：会匹配到所有的url：路径型url 和后缀型的url （包括/springmvc,.jsp,.js,和.html等）。-->
+
+ <!--在SpringMVC中需要添加这个标签：<mvc:default-servlet-handler /> 用来处理静态资源被“/”所拦截的问题 。-->

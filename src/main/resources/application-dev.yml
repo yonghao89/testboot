@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /sboot
+
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+
+cupSize: B Size
+age: 19
+
+girl:
+  cupSize: D Size
+  age: 22
