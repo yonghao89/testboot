@@ -16,6 +16,7 @@ public class ttt {
 
 
         System.out.println("master");
+        System.out.println("master 更新");
 
 
     }
