@@ -2,8 +2,10 @@ package com.test.testboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @SpringBootApplication
+@ServletComponentScan(basePackages = "com.test.testboot.servlet")
 public class TestbootApplication {
 //https://www.cnblogs.com/zedosu/p/6663911.html
 
