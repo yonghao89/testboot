@@ -13,6 +13,8 @@ public class ttt {
         //git branch 很好呀
         System.out.println("=====test branch");
         System.out.println("=====test branch line 222 中文汉化");
+        System.out.println("user.name：：："+System.getProperty("user.name"));
+        ;
 
 
     }

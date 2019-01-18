@@ -1,18 +1,36 @@
 package com.test.testboot;
 
+import com.test.testboot.properties.Girl;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.web.servlet.ServletComponentScan;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Import;
 
+
+//@Import(Girl.class)
+//@EnableConfigurationProperties(Girl.class)
 @SpringBootApplication
 @ServletComponentScan(basePackages = "com.test.testboot.servlet")
 public class TestbootApplication {
 //https://www.cnblogs.com/zedosu/p/6663911.html
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		SpringApplication.run(TestbootApplication.class, args);
-	}
+        ConfigurableApplicationContext context = SpringApplication.run(TestbootApplication.class, args);
+
+
+//        run.close();
+
+//        ConfigurableApplicationContext run = new SpringApplicationBuilder(TestbootApplication.class)
+//                .web(WebApplicationType.SERVLET).run(args);
+//        run.close();
+
+
+    }
 }
 //mvn dependency:purge-local-repository
 

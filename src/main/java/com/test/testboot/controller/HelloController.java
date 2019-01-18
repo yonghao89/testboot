@@ -34,8 +34,11 @@ public class HelloController {
 
 
 //        System.out.println("id:"+id);
-        System.out.println("Girl Info:"+girl.getAge()+girl.getCupSize());
-        return "Say Hello My Spring Boot cupSize: !" + cupSize + age;
+        System.out.println("Girl Info getAge:"+girl.getAge()+"   getCupSize:"+girl.getCupSize());
+
+        System.out.println("Say Hello My Spring Boot cupSize: " + cupSize +"  age:"+ age);
+
+        return "Say Hello My Spring Boot cupSize: " + cupSize + age;
     }
 }
 //@PathVariable(value = "mid",required = false) Integer id
